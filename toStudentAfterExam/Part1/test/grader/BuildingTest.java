@@ -71,7 +71,6 @@ class BuildingTest {
 	@Test
 	void testAddProfileExistedNormal() {
 		Building building2 = new Building();
-
 		building2.addProfile(per1, 36);
 		building2.addProfile(per2, 36);
 		building2.addProfile(per3, 35);

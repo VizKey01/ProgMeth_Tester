@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import logic.attack.Attack;
+import Part2.logic.attack.Attack;
 import Part2.logic.attack.SPAttack;
 import Part2.logic.monster.Leader;
-import logic.monster.Monster;
+import Part2.logic.monster.Monster;
 
 class LeaderTest {
 	Leader l;

@@ -3,10 +3,10 @@ package Part2.main;
 import java.util.ArrayList;
 import java.util.Random;
 
-import logic.attack.Attack;
+import Part2.logic.attack.Attack;
 import Part2.logic.attack.SPAttack;
 import Part2.logic.monster.Leader;
-import logic.monster.Monster;
+import Part2.logic.monster.Monster;
 
 //This class offers Utility methods for battle system
 public class BattleUtil {

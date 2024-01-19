@@ -1,6 +1,6 @@
-package logic.monster;
+package Part2.logic.monster;
 
-import logic.attack.Attack;
+import Part2.logic.attack.Attack;
 
 public class Monster {
 	protected String name;
@@ -35,7 +35,7 @@ public class Monster {
 	}
 
 	public void setHp(int hp) {
-		this.hp = hp<0? 0: (hp>maxhp?maxhp:hp);
+		this.hp = hp<0? 0: (Math.min(hp, maxhp));
 	}
 
 	public int getDefense() {
@@ -43,7 +43,7 @@ public class Monster {
 	}
 
 	public void setDefense(int def) {
-		this.def = def<0? 0:def;
+		this.def = Math.max(def, 0);
 	}
 
 	public int getSpecialDefense() {
@@ -51,7 +51,7 @@ public class Monster {
 	}
 
 	public void setSpecialDefense(int sp_def) {
-		this.sp_def = sp_def<0? 0:sp_def;
+		this.sp_def = Math.max(sp_def, 0);
 	}
 
 	public Attack getAttack() {

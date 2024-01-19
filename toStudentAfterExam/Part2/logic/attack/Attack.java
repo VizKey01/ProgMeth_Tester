@@ -1,6 +1,6 @@
 package Part2.logic.attack;
 
-import logic.monster.Monster;
+import Part2.logic.monster.Monster;
 
 public class Attack {
 	protected int power;
@@ -18,7 +18,7 @@ public class Attack {
 	}
 
 	public void setPower(int power) {
-		this.power = power<0? 0:power;
+		this.power = Math.max(power, 0);
 	}
 
 	public String getName() {
@@ -38,10 +38,7 @@ public class Attack {
 	}
 
 	public int calculateDamage(Monster target) {
-		/*FILL CODE*/
-		
-		
-		return 0;
+		return Math.max(getPower() - target.getDefense(), 0);
 	}
 	
 	@Override

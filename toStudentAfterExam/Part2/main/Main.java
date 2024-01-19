@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import Part2.logic.monster.Leader;
-import logic.monster.Monster;
+import Part2.logic.monster.Monster;
 
 public class Main {
 

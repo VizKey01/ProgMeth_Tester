@@ -17,7 +17,7 @@ public class RockManager {
 
 	public static NormalRock randomRock() {
 		switch(randomRockType()) {
-			case "Poison": return randomPoison();
+			case "Poison": randomPoison();
 			default: {
 				int damage = GameManager.getRandomNumberInRange(10, 25);
 				return new NormalRock(damage);

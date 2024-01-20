@@ -46,7 +46,7 @@ public class PoisonRockTest {
 	
 	@Test
 	void testInheritance() {
-		NormalRock rock = new PoisonRock(12, 5);
+		PoisonRock rock = new PoisonRock(12, 5);
 		assertEquals(12, rock.getDamage());
 		
 		PoisonRock ps = (PoisonRock) rock;

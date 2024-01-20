@@ -1,6 +1,6 @@
-package Part2.logic.monster;
+package logic.monster;
 
-import Part2.logic.attack.Attack;
+import logic.attack.Attack;
 
 public class Monster {
 	protected String name;
@@ -22,6 +22,12 @@ public class Monster {
 		this.setAttack(attack);
 	}
 
+	public int takeDamage(Attack attack) {
+		int dmg=attack.calculateDamage(this);
+		setHp(getHp()-attack.calculateDamage(this));
+		if(getHp()<=0){setDead(true);}
+		return dmg;
+	}
 	public String getName() {
 		return name;
 	}
@@ -35,7 +41,7 @@ public class Monster {
 	}
 
 	public void setHp(int hp) {
-		this.hp = hp<0? 0: (Math.min(hp, maxhp));
+		this.hp = hp<0? 0: (hp>maxhp?maxhp:hp);
 	}
 
 	public int getDefense() {
@@ -43,7 +49,7 @@ public class Monster {
 	}
 
 	public void setDefense(int def) {
-		this.def = Math.max(def, 0);
+		this.def = def<0? 0:def;
 	}
 
 	public int getSpecialDefense() {
@@ -51,7 +57,7 @@ public class Monster {
 	}
 
 	public void setSpecialDefense(int sp_def) {
-		this.sp_def = Math.max(sp_def, 0);
+		this.sp_def = sp_def<0? 0:sp_def;
 	}
 
 	public Attack getAttack() {
@@ -70,15 +76,7 @@ public class Monster {
 		return maxhp;
 	}
 
-	public int takeDamage(Attack attack) {
-		int damage = attack.calculateDamage(this);
-		hp -= damage;
-		if(hp <= 0) {
-			hp = 0;
-			isDead = true;
-		}
-		return damage;
-	}
+
 
 	public boolean isDead() {
 		return isDead;

@@ -5,6 +5,26 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/toStudentAfterExam" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2019" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2019/Q2/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020/Part1/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020/Part2/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021/Q1/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021/Q2/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part1/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2019/Q2" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021" />
+      <excludeFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part2" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2019/Q2/test" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2019/Solution" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020/Part1/test" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020/Part2/test" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021/Q1/test" />
+      <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021/Q2/test" />
+      <excludeFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part1" />
+      <excludeFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part1/test" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

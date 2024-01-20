@@ -1,0 +1,89 @@
+@startuml
+class Q1.logic.OrderItem {
+- Item item
+- int itemAmount
++ <<Create>> OrderItem(Item,int)
++ void increaseItemAmount(int)
++ int calculateTotalPrice()
++ void setItemAmount(int)
++ Item getItem()
++ void setItem(Item)
++ int getItemAmount()
+}
+class Q1.application.CPShop {
+- {static} ArrayList<Item> itemList
+- {static} ArrayList<Order> orderList
+- {static} boolean isEnd
+- {static} Scanner kb
++ {static} void main(String[])
++ {static} void addItemToOrder(Order,int,int)
++ {static} boolean addNewItem(String,int)
++ {static} boolean isItemExisted(String)
+- {static} void handleAddItem()
+- {static} void handleCreateNewOrder()
+- {static} void showAllItems()
+- {static} void showAllOrder()
++ {static} ArrayList<Order> getOrderList()
++ {static} void addBlankOrder()
++ {static} void initializeData()
+}
+class Q1.test.grader.OrderItemTest {
+~ {static} Item item1
+~ {static} Item item2
+~ {static} Item item3
+~ void testConstructor()
+~ void testConstructorNegativeAmount()
+~ void testGetItem()
+~ void testGetItemAmount()
+~ void testSetItemAmount()
+~ void testSetItemAmountNegative()
+~ void testCalculateTotalPrice()
+~ void testIncreaseItemAmount()
+~ void testIncreaseItemAmountNegative()
+}
+class Q1.logic.Item {
+- String name
+- int pricePerPiece
++ <<Create>> Item(String,int)
++ void setPricePerPiece(int)
++ String getName()
++ void setName(String)
++ int getPricePerPiece()
+}
+class Q1.test.grader.ItemTest {
+~ void testConstructor()
+~ void testConstructorMinusPrice()
+~ void testGetPricePerPiece()
+~ void testSetPricePerPiece()
+~ void testSetPricePerPieceNegative()
+~ void testGetName()
+}
+class Q1.test.grader.OrderTest {
+~ {static} Item item1
+~ {static} Item item2
+~ {static} Item item3
+~ void reset()
+~ void testConstructor()
+~ void testAddItemNormal()
+~ void testAddItemExisted()
+~ void testAddItemNegativeAmount()
+~ void testAddItemExistedNegativeAmount()
+~ void testCalculateOrderTotalPrice()
+}
+class Q1.test.grader.CPShopTest {
+~ void setUp()
+~ void testAddItemToOrder()
+}
+class Q1.logic.Order {
+- ArrayList<OrderItem> orderItemList
+- {static} int totalOrderCount
+- int orderNumber
++ <<Create>> Order()
++ OrderItem addItem(Item,int)
++ int calculateOrderTotalPrice()
++ {static} int getTotalOrderCount()
++ {static} void resetTotalOrderCount()
++ int getOrderNumber()
++ ArrayList<OrderItem> getOrderItemList()
+}
+@enduml

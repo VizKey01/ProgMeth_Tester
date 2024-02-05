@@ -1,8 +1,10 @@
 package products;
 
+import discount.FreeDiscountable;
+import discount.PercentDiscountable;
 import discount.Sellable;
 
-public class BaseProduct{
+public class BaseProduct implements Sellable {
 	protected String productName;
 	protected int price;
 	
@@ -22,7 +24,7 @@ public class BaseProduct{
 		return price;
 	}
 	public void setPrice(int price) {
-		this.price = price < 0 ? 0 : price;
+		this.price = Math.max(price, 0);
 	}
 	
 	//base product does not get any discounts

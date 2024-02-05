@@ -16,6 +16,8 @@
       <sourceFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part1/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q1/2019/Q3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019/toStudent" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exam2_Q1/2020/Part3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exam2_Q2/final sample 2020/toStudent" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020" />
       <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021" />
       <excludeFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part2" />
@@ -31,6 +33,10 @@
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q1/2019" />
       <excludeFolder url="file://$MODULE_DIR$/Progmeth_Lab1_2023_2_6633166821_Patit" />
       <excludeFolder url="file://$MODULE_DIR$/src" />
+      <excludeFolder url="file://$MODULE_DIR$/Exam2_Q1/2019/Q3" />
+      <excludeFolder url="file://$MODULE_DIR$/Exam2_Q1/2020/Part3" />
+      <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019" />
+      <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019/toStudent" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

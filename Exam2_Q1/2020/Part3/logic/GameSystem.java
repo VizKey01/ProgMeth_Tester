@@ -89,7 +89,21 @@ public class GameSystem {
 	}
 
 	public void action(Piece piece, boolean attack, int actionPattern) {
-	//Fill your code here
+		if(piece instanceof MotherShip) {
+			if(attack) {
+				removeOtherPieces(piece, piece.attackTargetPosition(actionPattern));
+			}
+			else {
+				piece.move(actionPattern);
+			}
+		}
+		else if(piece instanceof Fighter ft) {
+			piece.attackTargetPosition(actionPattern);
+			boolean check = removeOtherPieces(piece, piece.getCurrentPosition());
+			if(check){
+				ft.setPromoted(true);
+			}
+		}
 		
 	}
 	

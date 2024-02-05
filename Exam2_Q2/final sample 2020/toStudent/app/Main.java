@@ -209,14 +209,21 @@ public class Main {
 		showItems();
 		
 		try {
-			
+			String s = sc.nextLine();
+			int temp = Integer.parseInt(s);
+			Sellable item1 = shop.get(temp);
 			//Things you need to do here:
 			//A1. Accept a string input with sc.nextLine()
 			//A2. Attempt to parse the string into an int (the try/catch will handle bad cases automatically)
 			//A3. Use the int from step A2 to get a Sellable object from the ArrayList called shop
 			
 			System.out.println("Please choose the quantity of the items you want to buy.");
-			
+
+			String s1 = sc.nextLine();
+			int temp2 = Integer.parseInt(s1);
+			BillItem newBillItem = new BillItem(item1, temp2);
+			bill.itemsInBill.add(newBillItem);
+
 			//Things you need to do here:
 			//B1. Accept a string input with sc.nextLine()
 			//B2. Attempt to parse the string into an int (the try/catch will handle bad cases automatically)

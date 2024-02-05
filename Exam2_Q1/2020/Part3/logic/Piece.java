@@ -3,15 +3,16 @@ package logic;
 import java.util.ArrayList;
 
 //Some important thing are missing.
-public class Piece {
+public abstract class Piece {
 
 	protected boolean reverse;
 	protected String name;
 	protected PositionList movePositions;
 	protected Position currentPosition;
-	
-	public void move(int movePattern);
-	public Position attackTargetPosition(int actionPattern);
+
+    public abstract void move(int movePattern) ;
+
+    public abstract Position attackTargetPosition(int actionPattern);
 	
 	public Piece(int initialPositionX,int initialPositionY, boolean reverse, String name) {
 		movePositions = new PositionList();

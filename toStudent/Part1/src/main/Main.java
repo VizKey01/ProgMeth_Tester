@@ -1,13 +1,13 @@
-package main;
+package Part1.src.main;
 
-import gui.ControlPane;
-import gui.TicTacToePane;
+import Part1.src.gui.ControlPane;
+import Part1.src.gui.TicTacToePane;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import logic.GameLogic;
+import Part1.src.logic.GameLogic;
 
 public class Main extends Application {
 	@Override

@@ -19,6 +19,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q1/2020/Part3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q2/final sample 2020/toStudent" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/toStudent" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/toStudent/Part1/res" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020" />
       <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021" />
       <excludeFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part2" />
@@ -40,7 +41,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019/toStudent" />
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q1" />
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2" />
-      <excludeFolder url="file://$MODULE_DIR$/toStudent/Part1" />
+      <excludeFolder url="file://$MODULE_DIR$/toStudent/Part2" />
     </content>
     <orderEntry type="jdk" jdkName="21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />

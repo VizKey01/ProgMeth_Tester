@@ -1,6 +1,6 @@
-package logic;
+package Part1.src.logic;
 
-import gui.ControlPane;
+import Part1.src.gui.ControlPane;
 
 public class GameLogic {
 	

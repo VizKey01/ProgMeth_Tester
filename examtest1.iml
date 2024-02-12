@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019/toStudent" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q1/2020/Part3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exam2_Q2/final sample 2020/toStudent" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/toStudent" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2020" />
       <excludeFolder url="file://$MODULE_DIR$/Midterm_PrepareSolution/2021" />
       <excludeFolder url="file://$MODULE_DIR$/toStudentAfterExam/Part2" />
@@ -37,8 +38,11 @@
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q1/2020/Part3" />
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019" />
       <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2/finalSample-2019/toStudent" />
+      <excludeFolder url="file://$MODULE_DIR$/Exam2_Q1" />
+      <excludeFolder url="file://$MODULE_DIR$/Exam2_Q2" />
+      <excludeFolder url="file://$MODULE_DIR$/toStudent/Part1" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="JUnit4">
@@ -66,5 +70,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="lib" level="application" />
   </component>
 </module>
